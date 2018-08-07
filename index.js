@@ -1,5 +1,17 @@
 function fetchBooks() {
   //write fetch request to the Game of Thrones API
+  
+  
+    .then (function(response) {
+      return response.json();
+})
+.then(renderBooks)
+
+}
+
+function fetchhouses() {
+  fetch ('https://anapioficeandfire.com/api/houses')
+  
 }
 
 function renderBooks(json) {
@@ -14,3 +26,12 @@ function renderBooks(json) {
 document.addEventListener('DOMContentLoaded', function() {
   fetchBooks()
 })
+
+
+
+
+
+
+
+
+
